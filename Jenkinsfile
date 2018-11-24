@@ -10,7 +10,7 @@ pipeline {
                 steps {
                   script {
                               def msbuild = tool name: 'MSBuild', type: 'hudson.plugins.msbuild.MsBuildInstallation'
-                              bat "${msbuild} SimpleWindowsProject.sln"
+                              bat "${msbuild} UITestingAPP.sln"
                          } 
                       }
                     }
