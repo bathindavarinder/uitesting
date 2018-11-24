@@ -19,7 +19,7 @@ pipeline {
   {
     steps{
         script {
-               bat  "\"${tool 'MSTest'}\" /testcontainer:UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll"
+               bat  "\"${tool 'MSTest'}\" /testcontainer:UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll /nologo"
                 }
          }
   }
