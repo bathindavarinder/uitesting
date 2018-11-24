@@ -19,7 +19,7 @@ pipeline {
   {
     steps{
         script {
-    bat   "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/Common7/IDE/MSTest.exe" /testcontainer:UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll /resultsfile:TestResults.trx
+    bat   "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/Common7/IDE/MSTest.exe" UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll /resultsfile:TestResults.trx
     
         }
         }
