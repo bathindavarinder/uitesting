@@ -19,9 +19,8 @@ pipeline {
   {
     steps{
         script {
-    bat  "\"${tool 'MSBuild'}\" /testcontainer:UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll /resultsfile:TestResults.trx"
-    
-        }
-        }
+               bat  "\"${tool 'MSTest'}\" /testcontainer:UITestingAPP.Tests/bin/Release/UITestingAPP.Tests.dll /resultsfile:TestResults.trx"
+                }
+         }
   }
 }
