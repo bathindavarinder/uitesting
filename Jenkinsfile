@@ -6,7 +6,7 @@ pipeline {
         echo 'Testing done'
       }
     }
-    stage('') {
+    stage('Build') {
       steps {
         build(job: 'Build', wait: true)
       }
