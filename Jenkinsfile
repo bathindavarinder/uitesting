@@ -7,9 +7,12 @@ pipeline {
       }
     }
     stage('Build') {
-      steps {
-        build(job: 'Build', wait: true)
-      }
-    }
+                steps {
+                  script {
+                              def msbuild = tool name: 'MSBuild', type: 'hudson.plugins.msbuild.MsBuildInstallation'
+                              bat "${msbuild} SimpleWindowsProject.sln"
+                         } 
+                      }
+                    }
   }
 }
